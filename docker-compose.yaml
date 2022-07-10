@@ -1,0 +1,13 @@
+services:
+  webapp:
+    container_name: webapp-nginx
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - ./src:/usr/share/nginx/html
+      - ./conf.d:/etc/nginx/conf.d
+
+ 
+  
+  
